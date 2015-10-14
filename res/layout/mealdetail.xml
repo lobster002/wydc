@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.sky.wydc.view.HeadLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionbar"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.sky.wydc.view.SmartImageView
+                android:id="@+id/meal_pic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="套餐包括"
+                android:textColor="@color/text_color_Gray"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_color_LightGray" />
+
+            <TextView
+                android:id="@+id/meal_detail_dishids"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="套餐价:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/meal_newprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥123.0"
+                    android:textColor="#ff0000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/meal_oldprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="¥123.0"
+                    android:textColor="#cccccc"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/meal_detail_select"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/buy_selector" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="套餐介绍" 
+                 android:textColor="@color/text_color_Gray"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_color_LightGray" />
+
+            <TextView
+                android:id="@+id/meal_detail_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

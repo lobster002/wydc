@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sky.wydc.view.ArcMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:def="http://schemas.android.com/apk/res/com.sky.wydc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    def:position="right_bottom"
+    def:radius="120dp" >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/all"
+        android:tag="全部" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/cai"
+        android:tag="菜品" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/jiu"
+        android:tag="酒水" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/tang"
+        android:tag="汤类" />
+
+    <!-- 中间菜单按钮 -->
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/menu" />
+
+</com.sky.wydc.view.ArcMenu>

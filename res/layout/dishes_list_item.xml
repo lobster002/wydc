@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="5dp" >
+
+    <com.sky.wydc.view.RoundRectImageView
+        android:id="@+id/dish_img"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loding" />
+
+    <TextView
+        android:id="@+id/dish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dish_img"
+        android:maxLines="1"
+        android:text="我是标题我是标题"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dish_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dish_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/dish_img"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="我是内容我是内是内容我是内容我是内容"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/dish_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/dish_img"
+        android:text="98"
+        android:textColor="#FF0033"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dish_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="20dp"
+        android:maxLines="1"
+        android:text="4"
+        android:textSize="13sp" />
+
+</RelativeLayout>

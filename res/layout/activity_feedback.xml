@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/theme_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/text_item_bg"
+            android:gravity="top"
+            android:hint="请在此输入您宝贵的意见或建议"
+            android:paddingBottom="14.0dp"
+            android:paddingLeft="12.0dp"
+            android:paddingTop="12.0dp"
+            android:singleLine="false"
+            android:textColor="@color/text_color_nomal"
+            android:textSize="18.0sp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dp"
+            android:layout_marginTop="10.0dp"
+            android:background="@drawable/text_item_bg"
+            android:gravity="center_vertical"
+            android:hint="请留下您的联系方式，一经采纳，将有礼品送出"
+            android:paddingLeft="12.0dp"
+            android:paddingRight="12.0dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_nomal"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dp"
+            android:layout_marginTop="10.0dp"
+            android:background="@color/theme_color"
+            android:padding="10.0dp"
+            android:text="submit"
+            android:textColor="@color/text_color_nomal"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

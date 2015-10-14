@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/cart_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="我是标题我是标题"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cart_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="价格："
+        android:textColor="#FF0033"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cart_sum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="数量:1"
+        android:textSize="18sp" />
+
+</LinearLayout>
